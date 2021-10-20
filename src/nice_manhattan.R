@@ -56,10 +56,10 @@ manhattan_plot <- ggplot(
   theme( 
     legend.position = "none",
     panel.border = element_blank(),
-    panel.grid.major.x = element_blank(),
-    panel.grid.minor.x = element_blank(),
+    #panel.grid.major.x = element_blank(),
+    #panel.grid.minor.x = element_blank(),
     axis.title.y = element_markdown(),
     axis.text.x = element_text(angle = 60, size = 8, vjust = 0.5)
   )
 
-ggsave(args[3], manhattan_plot, width = 7, height = 5)
+ggsave(args[3], manhattan_plot, width = 178*((1+sqrt(5))/2), height = 178, units="mm", dpi = 400)
